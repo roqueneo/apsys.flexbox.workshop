@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link  rel="stylesheet" href="../styles/style.css" >
+
+  <title>Flexbox</title>
+</head>
+
+<style>
+    /* 
+        flex-direction: row || column || row-reverse || column-reverse
+        flex-wrap: nowrap todos en el mismo renglo =>  wrap los envia al siguente renglon
+        justify-content: flex-start, center, space-between => ajusta contenido
+    */
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .pip {
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        border-radius: 10px;
+    }
+    .item {
+        background-color: lightgray;
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    /* First face */
+    .first-face {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Second face */
+    .second-face {
+        display: flex;
+        justify-content: space-between;
+    }
+    .second-face .pip:nth-child(2) {
+        align-self: flex-end;
+    }
+    /* Third face */
+    .third-face {
+        display: flex;
+        justify-content: space-between;
+    }
+    .third-face .pip:nth-child(2) {
+        align-self: center;
+    }
+    .third-face .pip:nth-child(3) {
+        align-self: flex-end;
+    }
+    /* Fourth face */
+    .fourth-face {
+        display: flex;
+        justify-content: space-between;
+    }
+    .fourth-face .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    /* Fifth six */
+    .fifth-face {
+        display: flex;
+        justify-content: space-between;
+    }
+    .fifth-face .column:nth-child(2) {
+        align-self: center;
+    }
+    .fifth-face .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    /* Sixth face */
+    .sixth-face {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sixth-face .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+</style>
+
+<body>
+    <h1>Alignment</h1>
+    <div class="container">
+        <div class="item first-face">
+            <span class="pip"></span>
+        </div>
+        <div class="item second-face">
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </div>
+        <div class="item third-face">
+            <span class="pip"></span>
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </div>
+        <div class="item fourth-face">
+            <div class="column">
+                <span class="pip"></span>
+                <span class="pip"></span>
+            </div>
+            <div class="column">
+                <span class="pip"></span>
+                <span class="pip"></span>
+            </div>
+        </div>
+        <div class="item fifth-face">
+            <div class="column">
+                <span class="pip"></span>
+                <span class="pip"></span>
+            </div>
+            <div class="column">
+                <span class="pip"></span>
+            </div>
+            <div class="column">
+                <span class="pip"></span>
+                <span class="pip"></span>
+            </div>
+        </div>
+        <div class="item sixth-face">
+            <div class="column">
+                <span class="pip"></span>
+                <span class="pip"></span>
+                <span class="pip"></span>
+            </div>
+            <div class="column">
+                <span class="pip"></span>
+                <span class="pip"></span>
+                <span class="pip"></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
