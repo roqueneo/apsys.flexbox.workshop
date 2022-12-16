@@ -15,7 +15,8 @@
   /* justify-content: space-between; */
   /* align-items: flex-start; */
   /* align-content: flex-start; */
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  /* width: 500px; */
 }
 
 .container:first-child {
@@ -32,9 +33,9 @@
   /* align-self: flex-start; */
   /* width: 200px; */
   /** Shortcut grow shrink basis */
-  /* flex: 1 1 0; */
+  flex: 0 1 200px;
   /** Shortcut grow shrink basis */
-  /* flex-grow: 0; */
+  /* flex-grow: 1; */
   /** Remaining space */
   /* flex-shrink: 1; */
   /** Base width */
@@ -46,9 +47,9 @@
   color: white;
   /* align-self: center; */
   /* width: 200px; */
-  /* flex: 1; */
-  /* flex-grow: 2; */
-  /* flex-shrink: 1;
+  flex: 1 2;
+  /* flex-grow: 1;
+  flex-shrink: 1;
   flex-basis: 200px; */
 }
 
@@ -57,6 +58,7 @@
   color: white;
   /* width: 200px; */
   /* flex: 1; */
+  flex: 0 1 200px;
 }
 
 .pip {
