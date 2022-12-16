@@ -77,12 +77,12 @@
 }
 
 /* First face */
-.first-face {
+/* .first-face {
   display: flex;
   justify-content: center;
   align-items: center;
   order: 2;
-}
+} */
 
 /* Second face */
 .second-face {
